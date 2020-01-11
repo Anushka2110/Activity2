@@ -4,17 +4,13 @@ import './App.css';
 function App() {
   return (
     <div className="App">
+
+     <header className="App-header">
     <div>
       <form>
-          {/* <label>
-            First Name:
-            <input type='text' name='fName' placeholder='name' />
-          </label>{' '}
-          <br />
-          <label>
-            Last Name:
-            <input type='text' name='lName' />
-          </label> */}
+  <h1 align="center">Registration Form</h1>
+    Name : <input type="text"></input>
+    Email : <input type="text"></input>
           <br />
           <label>
             Age
@@ -38,6 +34,8 @@ function App() {
           <input type='submit' value='Submit' />
         </form>
       </div>
+    </header>  
+
     </div>
   );
 }
