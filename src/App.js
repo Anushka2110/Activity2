@@ -1,24 +1,43 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <form>
+          {/* <label>
+            First Name:
+            <input type='text' name='fName' placeholder='name' />
+          </label>{' '}
+          <br />
+          <label>
+            Last Name:
+            <input type='text' name='lName' />
+          </label> */}
+          <br />
+          <label>
+            Age
+            <input type='number' name='age' placeholder='insert your age'/>
+          </label>
+          <br />
+          <label>
+            <input type='radio' value='female' name='gender' id='diet' />
+            Female
+          </label>
+          <label>
+            <input type='radio' value='male' name='gender' id='diet' />
+            Male
+          </label>
+          <label>
+            <input type='radio' value='prefer not to answer' name='gender' id='diet' />
+            Prefer not to answer
+          </label>
+       
+          <br />
+          <input type='submit' value='Submit' />
+        </form>
+      </div>
     </div>
   );
 }
